@@ -1,15 +1,16 @@
 package com.example.saberoueslati.notebook.di.module
 
 import android.app.Application
+import com.example.saberoueslati.notebook.NoteBookApplication
+import com.example.saberoueslati.notebook.di.qualifiers.ApplicationContext
 import dagger.Module
 import dagger.Provides
+import javax.inject.Singleton
 
 @Module
-class AppModule(private val app: Application) {
-
+class AppModule {
+    @Singleton
+    @ApplicationContext
     @Provides
-    fun providesApplicationContext(): Application {
-        return app
-    }
-
+    fun provideApplicationContext(app: NoteBookApplication): Application = app
 }

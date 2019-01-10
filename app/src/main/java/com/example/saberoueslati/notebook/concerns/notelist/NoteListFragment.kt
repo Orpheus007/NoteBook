@@ -5,11 +5,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.saberoueslati.notebook.R
-import com.example.saberoueslati.notebook.base.BaseFragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class NoteListFragment : BaseFragment() {
+class NoteListFragment : Fragment() {
 
     companion object {
         fun newInstance(): NoteListFragment {

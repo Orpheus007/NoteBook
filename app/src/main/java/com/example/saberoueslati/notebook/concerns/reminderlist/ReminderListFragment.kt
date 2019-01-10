@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.saberoueslati.notebook.R
-import com.example.saberoueslati.notebook.base.BaseFragment
 
-class ReminderListFragment : BaseFragment() {
+class ReminderListFragment : Fragment() {
     companion object {
         fun newInstance(): ReminderListFragment {
             val fragment = ReminderListFragment()
