@@ -1,4 +1,4 @@
-package com.example.saberoueslati.notebook.concerns.notelist
+package com.example.saberoueslati.notebook.notelist
 
 import android.text.Editable
 import android.text.TextWatcher

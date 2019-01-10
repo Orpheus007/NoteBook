@@ -1,8 +1,8 @@
-package com.example.saberoueslati.notebook.di.module
+package com.example.saberoueslati.notebook.application.di.module
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.saberoueslati.notebook.concerns.notelist.AddNoteViewModel
+import com.example.saberoueslati.notebook.notelist.AddNoteViewModel
 import dagger.Binds
 import dagger.MapKey
 import dagger.Module

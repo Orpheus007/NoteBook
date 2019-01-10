@@ -1,4 +1,4 @@
-package com.example.saberoueslati.notebook.concerns.settings
+package com.example.saberoueslati.notebook.reminderlist
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,19 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.saberoueslati.notebook.R
-import com.example.saberoueslati.notebook.base.BaseFragment
 
-class SettingsFragment : Fragment() {
+class ReminderListFragment : Fragment() {
     companion object {
-        fun newInstance(): SettingsFragment {
-            val fragment = SettingsFragment()
+        fun newInstance(): ReminderListFragment {
+            val fragment = ReminderListFragment()
             fragment.retainInstance = true
             return fragment
         }
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.settings_fragment, container, false)
+        val view = inflater.inflate(R.layout.reminders_list_fragment, container, false)
 
 
 

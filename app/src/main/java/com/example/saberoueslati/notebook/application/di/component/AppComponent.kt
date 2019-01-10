@@ -1,9 +1,9 @@
-package com.example.saberoueslati.notebook.di.component
+package com.example.saberoueslati.notebook.application.di.component
 
-import com.example.saberoueslati.notebook.NoteBookApplication
-import com.example.saberoueslati.notebook.di.module.ActivityBindingModule
-import com.example.saberoueslati.notebook.di.module.AppModule
-import com.example.saberoueslati.notebook.di.module.DatabaseModule
+import com.example.saberoueslati.notebook.application.NoteBookApplication
+import com.example.saberoueslati.notebook.application.di.module.ActivityBindingModule
+import com.example.saberoueslati.notebook.application.di.module.AppModule
+import com.example.saberoueslati.notebook.application.di.module.DatabaseModule
 import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule

@@ -3,7 +3,7 @@
     package="com.example.saberoueslati.notebook">
 
     <application
-        android:name=".NoteBookApplication"
+        android:name=".application.NoteBookApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".concerns.HomeScreen"
+            android:name=".homescreen.HomeScreen"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".concerns.notelist.AddNoteActivity"></activity>
+        <activity android:name=".notelist.AddNoteActivity"></activity>
     </application>
 
 </manifest>

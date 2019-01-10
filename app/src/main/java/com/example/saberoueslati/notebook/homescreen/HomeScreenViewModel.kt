@@ -1,4 +1,4 @@
-package com.example.saberoueslati.notebook.concerns
+package com.example.saberoueslati.notebook.homescreen
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

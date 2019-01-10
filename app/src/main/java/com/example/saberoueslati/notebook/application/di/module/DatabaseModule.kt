@@ -1,4 +1,4 @@
-package com.example.saberoueslati.notebook.di.module
+package com.example.saberoueslati.notebook.application.di.module
 
 import android.app.Application
 import android.content.Context
@@ -17,7 +17,7 @@ class DatabaseModule {
 
     @Singleton
     @Provides
-    fun provideRoomDatabase(@ApplicationContext app: Application): NoteBookDatabase {
+    fun provideRoomDatabase(@ApplicationContext app: Context): NoteBookDatabase {
         return Room.databaseBuilder(app, NoteBookDatabase::class.java, "note_book.db").build()
     }
 

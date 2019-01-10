@@ -1,4 +1,4 @@
-package com.example.saberoueslati.notebook.concerns.notelist
+package com.example.saberoueslati.notebook.notelist
 
 import android.content.Intent
 import android.os.Bundle

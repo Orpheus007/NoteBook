@@ -5,7 +5,7 @@
 
     <data class="AddNoteScreenBinding">
 
-        <variable name="viewModel" type="com.example.saberoueslati.notebook.concerns.notelist.AddNoteViewModel"/>
+        <variable name="viewModel" type="com.example.saberoueslati.notebook.notelist.AddNoteViewModel"/>
 
     </data>
 

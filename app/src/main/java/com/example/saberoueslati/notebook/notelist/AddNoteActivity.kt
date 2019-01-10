@@ -1,4 +1,4 @@
-package com.example.saberoueslati.notebook.concerns.notelist
+package com.example.saberoueslati.notebook.notelist
 
 import android.os.Bundle
 import android.view.View
@@ -35,8 +35,15 @@ class AddNoteActivity : BaseActivity() {
             }
         })
 
+        binding.goBack.setOnClickListener(object : OneClickListener() {
+            override fun onClicked(it: View) {
+                onBackPressed()
+            }
+        })
+
         viewModel.callBack.observe(this, EventObserver {
             Toasty.success(this, "Note Added Successfully", Toast.LENGTH_SHORT, true).show()
+            onBackPressed()
         })
     }
 }

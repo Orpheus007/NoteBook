@@ -1,4 +1,4 @@
-package com.example.saberoueslati.notebook.concerns
+package com.example.saberoueslati.notebook.homescreen
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,9 +8,9 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.viewpager.widget.ViewPager
 import com.eftimoff.viewpagertransformers.CubeOutTransformer
 import com.example.saberoueslati.notebook.R
-import com.example.saberoueslati.notebook.concerns.notelist.NoteListFragment
-import com.example.saberoueslati.notebook.concerns.reminderlist.ReminderListFragment
-import com.example.saberoueslati.notebook.concerns.settings.SettingsFragment
+import com.example.saberoueslati.notebook.notelist.NoteListFragment
+import com.example.saberoueslati.notebook.reminderlist.ReminderListFragment
+import com.example.saberoueslati.notebook.settings.SettingsFragment
 import com.example.saberoueslati.notebook.databinding.NavigationBinding
 import com.example.saberoueslati.notebook.utils.EventObserver
 import com.example.saberoueslati.notebook.utils.FragmentPagerAdapter

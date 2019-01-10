@@ -1,4 +1,4 @@
-package com.example.saberoueslati.notebook.di.module
+package com.example.saberoueslati.notebook.notelist.di
 
 import androidx.lifecycle.MutableLiveData
 import com.example.saberoueslati.notebook.db.note.Note
