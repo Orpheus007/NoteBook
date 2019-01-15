@@ -9,7 +9,10 @@ import androidx.room.Query
 @Dao
 interface NoteDao {
     @Query("SELECT * FROM Note")
-    fun getAll(): List<Note>
+    fun getAll(): LiveData<List<Note>>
+
+    @Query("SELECT * FROM Note ")
+    fun getAllAsAList(): List<Note>
 
     @Query("SELECT * FROM Note WHERE nid IN (:userIds)")
     fun loadAllByIds(userIds: IntArray): List<Note>

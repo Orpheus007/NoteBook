@@ -7,10 +7,8 @@ import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 class NoteRepositoryImpl @Inject constructor(private val noteDatabase: NoteBookDatabase) : NoteRepository {
-    override suspend fun getAllNotes(): List<Note> {
-        return withContext(Dispatchers.IO) {
-            noteDatabase.noteDao().getAll()
-        }
+    override fun getAllNotes(): LiveData<List<Note>> {
+        return noteDatabase.noteDao().getAll()
     }
 
     override suspend fun addNote(note: Note) {

@@ -19,6 +19,7 @@ data class Note(
 ) {
     constructor() : this(0, "", "", "", "", false, "", "", false, "")
 
+    constructor(title: String?,content: String?): this(0,title,content,null,null,null,null,null,null,null)
 
     override fun toString(): String {
         return "Note(nid=$nid, title=$title, content=$content, date=$date, category=$category, reminder=$reminder, reminderDate=$reminderDate, reminderHour=$reminderHour, reminderRepeat=$reminderRepeat, reminderDay=$reminderDay)"

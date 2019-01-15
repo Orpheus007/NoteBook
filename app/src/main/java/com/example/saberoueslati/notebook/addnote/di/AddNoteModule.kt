@@ -1,9 +1,10 @@
-package com.example.saberoueslati.notebook.notelist.di
+package com.example.saberoueslati.notebook.addnote.di
 
 import androidx.lifecycle.MutableLiveData
 import com.example.saberoueslati.notebook.db.note.Note
 import com.example.saberoueslati.notebook.di.scope.ActivityScope
 import com.example.saberoueslati.notebook.utils.Event
+import com.example.saberoueslati.notebook.utils.ToolBoxImpl
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.CoroutineScope
@@ -25,6 +26,7 @@ class AddNoteModule {
     fun provideCallBack(): MutableLiveData<Event<Boolean>> {
         return MutableLiveData()
     }
+
     @ActivityScope
     @Provides
     fun provideJob(): Job {
@@ -41,5 +43,11 @@ class AddNoteModule {
     @Provides
     fun provideScope(coroutineContext: CoroutineContext): CoroutineScope {
         return CoroutineScope(coroutineContext)
+    }
+
+    @ActivityScope
+    @Provides
+    fun provideToolBox(): ToolBoxImpl {
+        return ToolBoxImpl()
     }
 }
